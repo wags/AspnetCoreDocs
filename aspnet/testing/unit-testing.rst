@@ -1,9 +1,11 @@
-Unit Testing
-============
+Unit Testing 단위테스트
+======================
 
 By `Steve Smith`_
 
 ASP.NET Core has been designed with testability in mind, so that creating unit tests for your applications is easier than ever before. This article briefly introduces unit tests (and how they differ from other kinds of tests) and demonstrates how to add a test project to your solution and then run unit tests using either the command line or Visual Studio.
+
+ASP.NET Core는 테스트를 염두에 두고 설계되었기 때문에 여러분의 애플리케이션에서 단위 테스트를 작성하는 것은 이전 어느 때보다도 쉬워졌다. 이 글은 단위 테스트에 대해 간단히 소개하고 (단위 테스트가 다른 종류의 테스트와 어떻게 다른지도 알아보고) 여러분의 솔루션에 테스트 프로젝트를 어떻게 추가하는지 설명한다. 마지막으로 커맨드 라인 또는 비주얼 스튜디오를 통해 단위 테스트를 실행해 본다.
 
 .. contents:: Sections:
   :local:
@@ -11,8 +13,8 @@ ASP.NET Core has been designed with testability in mind, so that creating unit t
 
 `View or download sample code <https://github.com/aspnet/Docs/tree/master/aspnet/testing/unit-testing/sample>`__
 
-Getting Started with Testing
-----------------------------
+Getting Started with Testing 테스트 시작하기
+------------------------------------------
 
 Having a suite of automated tests is one of the best ways to ensure a software application does what its authors intended it to do. There are many different kinds of tests for software applications, including :doc:`integration tests <integration-testing>`, web tests, load tests, and many others. At the lowest level are unit tests, which test individual software components or methods. Unit tests should only test code within the developer's control, and should not test infrastructure concerns, like databases, file systems, or network resources. Unit tests may be written using `Test Driven Development (TDD) <http://deviq.com/test-driven-development/>`_, or they can be added to existing code to confirm its correctness. In either case, they should be small, well-named, and fast, since ideally you will want to be able to run hundreds of them before pushing your changes into the project's shared code repository.
 
