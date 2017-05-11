@@ -264,8 +264,8 @@ Troubleshooting:
 - You may have deployed a portable application without installing .NET Core on the server. If you are attempting to deploy a portable application and have not installed .NET Core, run the **.NET Core Windows Server Hosting Bundle Installer** on the server. See `Install the .NET Core Windows Server Hosting Bundle`_.
 - You may have deployed a portable application and installed .NET Core without restarting the server. Restart the server.
 
-Incorrect `proecessPath`, missing PATH variable, or *dotnet.exe* access violation
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Incorrect `processPath`, missing PATH variable, or *dotnet.exe* access violation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 - **Browser:** HTTP Error 502.5 - Process Failure
 - **Application Log:** Failed to start process with commandline '"dotnet" .\\my_application.dll' (portable app) or '".\\my_application_Foo.exe"' (self-contained app), ErrorCode = '0x80070002'.
